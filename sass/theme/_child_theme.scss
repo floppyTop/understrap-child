@@ -1,14 +1,14 @@
-.navbar-collapse {
-    flex-grow: 0;
-}
+// .navbar-collapse {
+//     flex-grow: 0;
+// }
 
 nav.navbar {
-    background: $cyan !important;
+    background: $primary !important;
 
     .navbar-brand {
         max-width: 200px;
     }
     .nav-link {
-        color: $off-black;
+        color: $dark;
     }
 } 
