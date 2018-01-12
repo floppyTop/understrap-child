@@ -3,12 +3,35 @@
 // }
 
 nav.navbar {
-    background: $primary !important;
+    background: $teal !important;
+    ul.navbar-nav {
+        li.active {
+            font-weight: 600;
+        }
 
+        li a.nav-link {
+            color: $dark;
+            padding: 5px .2em;
+
+        @include media-breakpoint-up(sm) {
+            &::after {
+                content: '';
+                display: inline-block;                
+                height: 1em;
+                width: 1px;
+                margin: 0 .75em;
+                background: lighten($dark, 20%);
+                transform: rotate(10deg);
+                position: relative;
+                top: 3px;
+            }
+        }
+        }
+}
     .navbar-brand {
-        max-width: 200px;
+        max-width: 180px;
     }
-    .nav-link {
-        color: $dark;
+    #navbarNavDropdown {
+        flex-grow: 0;
     }
 } 

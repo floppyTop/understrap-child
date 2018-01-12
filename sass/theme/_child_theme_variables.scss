@@ -5,14 +5,21 @@
 // Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
 // Just add your color code here, compile the theme.scss file to change this color everywhere
 
+//Bootstrap Var Overrides
+$navbar-link-padding-x: 30px;
+
 
 //
 // Color system
 //
-$primary: #95C9BD;
+$primary: #3B3B3B;
 $primary-dark: #34977F;
-$accent: #D13F3F;
-$dark: #3B3B3B;
+$accent:#D13F3F;
+$dark:  #3B3B3B;
+$teal:  #95C9BD;
+
+//Nav Vars
+$component-active-color: #3B3B3B;
 
 
 //Gradients
