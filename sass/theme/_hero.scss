@@ -1,0 +1,18 @@
+.hero  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+    div {
+        flex: 1;
+        height: 350px;
+        background-size: cover;
+        &:nth-child(1) {
+            background-position: 45% bottom;
+        }
+        &:nth-child(2) {
+            background-position: 60% bottom;
+        }
+    }
+}
