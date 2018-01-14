@@ -23,3 +23,8 @@ function theme_enqueue_styles() {
         wp_enqueue_script( 'comment-reply' );
     }
 }
+
+add_action('wp_enqueue_scripts', 'add_google_fonts');
+function add_google_fonts() {
+    wp_enqueue_style('add_google_fonts', "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i,800i,900i", false);
+}   

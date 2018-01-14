@@ -1,0 +1,16 @@
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: $accent;
+    border: 1px solid $grey-med;
+
+    &:hover {
+        background-color: $teal-dark;
+    }
+}

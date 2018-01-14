@@ -12,14 +12,30 @@ $navbar-link-padding-x: 30px;
 //
 // Color system
 //
-$primary: #3B3B3B;
-$primary-dark: #34977F;
-$accent:#D13F3F;
-$dark:  #3B3B3B;
+$accent:#c22e2e;
+
+$grey:  #3B3B3B;
+$grey-med: #6B5E63;
+
 $teal:  #95C9BD;
+$teal-dark: #407e70;
+
+$orange: #ee620b;
+
+//Bootstrap Font Overrides
+$component-active-color: #3B3B3B;
+
+//
+// Font System
+//
+$core-font: "Montserrat";
+
+$browser-context: 16;
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
 
 //Nav Vars
-$component-active-color: #3B3B3B;
 
 
 //Gradients

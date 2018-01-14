@@ -9,4 +9,9 @@
 
 // Any additional imported files //
 @import "theme/child_theme";  // <--------- Add your styles into this file
+@import "theme/type";
+@import "theme/buttons";
+@import "theme/header";
+@import "theme/sidebar";
+@import "theme/forms";
 @import "theme/hero";
