@@ -9,7 +9,7 @@ nav.navbar {
             color: $dark;
             padding: 5px .2em;
 
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             &::after {
                 content: '';
                 display: inline-block;                

@@ -1,0 +1,38 @@
+.slick-arrow {
+    position: absolute;
+    &.next {
+        bottom: 50%;
+        right: -1em;
+    }
+    &.prev {
+        top: 45%;
+        left: -1em;
+    }
+}
+
+.slick-slide {
+    padding: 1em;
+    .bar {
+        display: flex;
+        box-sizing: border-box;
+        border-top: 1px solid #212121;
+    }
+    h3 {
+        margin: 0;
+        &.featured-product-title {
+            flex: 0 1 70%;  
+        }
+    }
+    a {
+        color: #fff;
+        background: rgba(238,98,11,0.8);
+        padding: 1.5em;
+        width: 100%;
+        display: inline-block;
+        &.view {
+            flex: 0 1 30%;
+            color: #212121;
+            background: #fff;
+        }
+    }
+}

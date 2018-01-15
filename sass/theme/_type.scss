@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, p, a, span, blockquote, label, input {
 /// Sizes
 //
 h1 {
-    font-size: em(40);
+    font-size: em(35);
 }
 
 h2 {
@@ -70,7 +70,7 @@ h2, h3, label {
 //
 
 // Italic
-h1, h2, h3, h5, h6, label, .nav-link {
+h1, h2, h3, h5, label, .nav-link {
     font-style: italic;
 }
 
@@ -106,6 +106,10 @@ h1, h2, h3, h4, h5, h6, p, span:not("span.display-name"), blockquote {
 
 a {
     color: $accent;
+}
+
+.intro {
+    color: #fff;
 }
 
 // Quote Style

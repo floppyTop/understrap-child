@@ -1,0 +1,11 @@
+section {
+    padding: 10vw;
+    text-align: center;
+    &:nth-of-type(odd) {
+        background-color: $grey-med;
+    }
+
+    @media #{$sm-min} {
+        padding: 4vw 8vw;
+    }
+}

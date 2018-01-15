@@ -1,0 +1,20 @@
+section.intro {
+    h2.intro{
+        font-size: em(24);
+        @media #{$sm-min} {
+            font-size: em(38);
+        }
+    }
+    p.intro-text {
+        font-size: em(17);
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    section.intro {
+        p.intro-text {
+            padding: 0 3em;
+            font-size: em(24);
+        }
+    }
+}

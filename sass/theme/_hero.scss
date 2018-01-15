@@ -1,18 +1,107 @@
 .hero  {
+    .icon-container {
+        flex: 0 1 100%;        
+    }
+    .icon {
+        display: block;
+        align-self: flex-start;
+        width: 70px;
+        height: auto;
+        position: relative;
+        bottom: 18%;
+        transition: .15s ease-out;
+        transform-origin: center 60%;
+        &.right {
+            transform: rotate(45deg);
+        }
+        &.left {
+            transform: rotate(-45deg);
+        }
+    }
+    .hero-heading {
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        top: 20%;
+        z-index: 1;
+        background: $orange;
+        border-top: 3px solid $grey;
+        border-bottom: 3px solid $grey;        
+        min-height: 0%;
+        align-self: flex-start;
+        padding: .12em .5em;
+        transition: .15s ease-out;
+    }
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-basis: 100%;
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    height: 350px;    
     div {
-        flex: 1;
-        height: 350px;
-        background-size: cover;
-        &:nth-child(1) {
-            background-position: 45% bottom;
+        flex: 0 1 50%;
+        height: 350px;        
+        a {
+            width: 100%;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            text-decoration: none;                             
         }
-        &:nth-child(2) {
-            background-position: 60% bottom;
+        &:hover {
+            .hero-heading {
+                padding: .12em 1.2em;
+                background-color: #fff;
+                color: $grey;
+                border-top: 3px solid $grey;
+                border-bottom: 3px solid $grey;
+                
+            }
+            cursor: pointer;
+        }
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+        &:nth-child(odd) {
+            background-position: 45% 20%;
+            border-right: 1px solid #fff;
+            &:hover {
+                img.icon {
+                    transform: rotateY(45deg);
+                }
+            }
+        }
+        &:nth-child(2n) {
+            background-position: 60% top;
+            border-left: 1px solid #fff;     
         }
     }
 }
+
+    @media #{$xl-min} {
+        .hero .icon {
+            bottom: 15%;
+        } 
+
+    }
+
+    @media #{$xs-sm} {
+        .hero, .hero div { 
+            height: 200px;
+        }
+    }
+
+    @media #{$xl-min} {
+        .hero, .hero div {
+            height: 400px;
+            &:nth-child(1) {
+                background-position: 45% 75%; 
+            }
+            &:nth-child(2) {
+                background-position: 45% 50%; 
+            }
+        }
+    }
