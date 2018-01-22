@@ -9682,6 +9682,8 @@ nav.navbar {
 #right-sidebar {
   padding: 1.25em;
   background: #e6e6e6; }
+  #right-sidebar ul {
+    padding-left: 1em; }
 
 form {
   margin-bottom: 1.25em; }
@@ -9765,6 +9767,7 @@ form {
       transform: rotate(-45deg); }
   .hero .hero-heading {
     text-transform: uppercase;
+    font-weight: 900;
     color: #fff;
     position: relative;
     top: 20%;
@@ -9822,10 +9825,12 @@ form {
     .hero:nth-child(2), .hero div:nth-child(2) {
       background-position: 45% 50%; } }
 
-section.intro h2.intro {
-  font-size: 1.5em; }
+section.intro h1.intro {
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase; }
   @media only screen and (min-width: 768px) {
-    section.intro h2.intro {
+    section.intro h1.intro {
       font-size: 2.375em; } }
 
 section.intro p.intro-text {
@@ -9835,6 +9840,83 @@ section.intro p.intro-text {
   section.intro p.intro-text {
     padding: 0 3em;
     font-size: 1.5em; } }
+
+.slick-arrow {
+  position: absolute; }
+  .slick-arrow.next {
+    bottom: 50%;
+    right: -1em; }
+  .slick-arrow.prev {
+    top: 45%;
+    left: -1em; }
+  .slick-arrow.slick-disabled {
+    color: #8b8b8b; }
+
+.featured-categories .slick-slide {
+  padding: 1em;
+  height: auto; }
+  .featured-categories .slick-slide .bar {
+    display: flex;
+    box-sizing: border-box;
+    border-top: 1px solid #212121;
+    justify-content: flex-start;
+    flex-basis: 100%; }
+  .featured-categories .slick-slide h3 {
+    margin: 0; }
+    .featured-categories .slick-slide h3.featured-product-title {
+      flex: 0 1 80%; }
+  .featured-categories .slick-slide a {
+    color: #fff;
+    background: rgba(238, 98, 11, 0.8);
+    padding: .5em;
+    width: 100%;
+    display: inline-block; }
+    .featured-categories .slick-slide a.view {
+      flex: 0 40%;
+      color: #212121;
+      background: #fff; }
+    @media (min-width: 992px) {
+      .featured-categories .slick-slide a {
+        padding: .5em 1.2em; } }
+
+.recent-posts .slick-slider {
+  height: auto; }
+
+.recent-posts .slick-arrow {
+  color: #fff; }
+  .recent-posts .slick-arrow.slick-disabled {
+    color: #6b6b6b; }
+
+.recent-posts .slick-active button::before {
+  color: #fff !important; }
+
+.recent-posts a {
+  color: #fff; }
+
+.recent-posts h2 {
+  color: #fff;
+  font-size: 2.375em; }
+  .recent-posts h2::after {
+    content: '';
+    display: block;
+    width: 20%;
+    margin: .25em auto;
+    border-bottom: 1px solid #fff; }
+
+.recent-posts h3 {
+  text-align: left; }
+
+.recent-posts p {
+  color: #fff;
+  text-align: left; }
+
+.recent-posts .slick-slide {
+  height: auto;
+  padding: 1em; }
+  @media (min-width: 1200px) {
+    .recent-posts .slick-slide {
+      padding: 2em 4em;
+      border-right: 1px solid #a8a8a8; } }
 
 /* Slider */
 .slick-slider {
@@ -9918,8 +10000,8 @@ section.intro p.intro-text {
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  src: url("../fonts/slick.eot");
+  src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -10040,33 +10122,3 @@ section.intro p.intro-text {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
-
-.slick-arrow {
-  position: absolute; }
-  .slick-arrow.next {
-    bottom: 50%;
-    right: -1em; }
-  .slick-arrow.prev {
-    top: 45%;
-    left: -1em; }
-
-.slick-slide {
-  padding: 1em; }
-  .slick-slide .bar {
-    display: flex;
-    box-sizing: border-box;
-    border-top: 1px solid #212121; }
-  .slick-slide h3 {
-    margin: 0; }
-    .slick-slide h3.featured-product-title {
-      flex: 0 1 70%; }
-  .slick-slide a {
-    color: #fff;
-    background: rgba(238, 98, 11, 0.8);
-    padding: 1.5em;
-    width: 100%;
-    display: inline-block; }
-    .slick-slide a.view {
-      flex: 0 1 30%;
-      color: #212121;
-      background: #fff; }

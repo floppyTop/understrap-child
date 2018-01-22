@@ -1,3 +1,5 @@
+$slick-font-path: "../fonts/";
+
 .slick-arrow {
     position: absolute;
     &.next {
@@ -8,31 +10,41 @@
         top: 45%;
         left: -1em;
     }
+    &.slick-disabled {
+        color: #8b8b8b;
+    }
 }
 
-.slick-slide {
+.featured-categories .slick-slide {
     padding: 1em;
+    height: auto;
     .bar {
         display: flex;
         box-sizing: border-box;
         border-top: 1px solid #212121;
+        justify-content: flex-start;
+        flex-basis: 100%;
     }
     h3 {
         margin: 0;
         &.featured-product-title {
-            flex: 0 1 70%;  
+            flex: 0 1 80%;  
         }
     }
     a {
         color: #fff;
         background: rgba(238,98,11,0.8);
-        padding: 1.5em;
+        padding: .5em;
         width: 100%;
         display: inline-block;
         &.view {
-            flex: 0 1 30%;
+            flex: 0 40%;
             color: #212121;
             background: #fff;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: .5em 1.2em;
         }
     }
 }

@@ -1,6 +1,8 @@
 section.intro {
-    h2.intro{
+    h1.intro {
         font-size: em(24);
+        font-weight: 800;
+        text-transform: uppercase;
         @media #{$sm-min} {
             font-size: em(38);
         }

@@ -28,3 +28,16 @@ add_action('wp_enqueue_scripts', 'add_google_fonts');
 function add_google_fonts() {
     wp_enqueue_style('add_google_fonts', "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i,800i,900i", false);
 }
+
+//add_filter("the_content", character_limit);
+
+// function character_limit($content) {
+//     return substr($content, 0, 300);
+// }
+
+function dump($var) {
+    ob_start();
+    var_dump($var);
+    $output = ob_get_clean();
+    echo preg_replace("/=>(\s+)/m", ' => ', $output);
+}
