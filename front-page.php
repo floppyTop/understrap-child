@@ -64,14 +64,14 @@
     <?php endif; ?>
 </div>
 
-<section class="intro">
+<section class="intro content">
     <div class="inner">
     <h1 class="intro"><?php the_field('intro_heading') ?></h1>
     <p class="intro-text"><?php echo $introText; ?></p>
     </div>
 </section>
 
-<section class="featured-categories">
+<section class="featured-categories content">
     <div class="inner">
 
         <?php if (!empty ($term_children)) : ?>
@@ -103,7 +103,7 @@
         <?php endif; ?>
 </section>
 
-<section class="recent-posts">
+<section class="recent-posts content">
     <div class="inner">
         <h2>Recent Blog Posts</h2>
         <?php

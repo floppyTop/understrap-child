@@ -9634,14 +9634,18 @@ blockquote {
     margin-bottom: 0;
     font-style: italic; }
 
-section {
+section.content {
   padding: 10vw;
   text-align: center; }
-  section:nth-of-type(odd) {
+  section.content:nth-of-type(odd) {
     background-color: #6B5E63; }
   @media only screen and (min-width: 768px) {
-    section {
+    section.content {
       padding: 4vw 8vw; } }
+
+.error-404 {
+  background: #e6e6e6;
+  padding: 1em; }
 
 .btn, .wpcf7 input[type=submit] {
   border-radius: 0;
