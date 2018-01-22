@@ -73,8 +73,11 @@
 
 <section class="featured-categories">
     <div class="inner">
+
         <?php if (!empty ($term_children)) : ?>
+
             <div class="slick-slider">
+
             <?php foreach   (   $term_children as $child    ) {
                 $term = get_term_by( 'id', $child, $taxonomy_name );
                 $thumb_id = get_woocommerce_term_meta( $term->term_id, 'thumbnail_id', true );
@@ -86,13 +89,17 @@
                 echo '</div>';
                 echo '</div>';
             } ?>
-            </div>
+
         </div>
+
+    </div>
         <?php wp_reset_postdata(); ?>
         <?php else: ?>
+
         <p>
             <?php _e( 'No Products' ); ?>
         </p>
+
         <?php endif; ?>
 </section>
 
@@ -101,8 +108,8 @@
         <h2>Recent Blog Posts</h2>
         <?php
             echo '<div class="slick-slider">';
-            $recent_posts = wp_get_recent_posts();
-	        foreach ( $recent_posts as $recent ){
+            
+	        foreach ( $recent_posts as $recent )    {
                 $content_post   =   get_post($recent["ID"]);
                 $content = $content_post->post_content;
                 $content = apply_filters('the_content', $content);
@@ -113,6 +120,7 @@
                         echo    '<p>' . substr($content, 0, 200) . ' <a href="' . get_permalink($recent["ID"]) . '"> [...]</a></p>';
                 echo '</div>'; 
             }
+
             echo '</div>';
             
 	        wp_reset_query();
