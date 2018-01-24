@@ -43,7 +43,7 @@ $slick-font-path: "../fonts/";
             background: #fff;
         }
 
-        @include media-breakpoint-up(lg) {
+        @include media-breakpoint-up(xl) {
             padding: .5em 1.2em;
         }
     }

@@ -29,12 +29,13 @@ function add_google_fonts() {
     wp_enqueue_style('add_google_fonts', "https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i,800i,900i", false);
 }
 
-//add_filter("the_content", character_limit);
+add_action( 'after_setup_theme', 'register_footer_menu' );
 
-// function character_limit($content) {
-//     return substr($content, 0, 300);
-// }
+function register_footer_menu() {
+    register_nav_menu(  'secondary', __('Footer Menu', 'understrap-child')  );
+}
 
+//Debug
 function dump($var) {
     ob_start();
     var_dump($var);

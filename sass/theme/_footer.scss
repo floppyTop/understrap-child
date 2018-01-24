@@ -1,0 +1,37 @@
+div#wrapper-footer {
+  background: $teal-dark;
+
+  h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+    }
+  }
+
+  .menu {
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0 .5em;
+      list-style-type: none;
+      text-align: center;
+
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+      }
+
+      li {
+        @include media-breakpoint-up(lg) {
+          margin-right: 1em;
+        }
+      }
+    }
+    a {
+      color: #fff;
+      text-transform: capitalize;
+    }
+  }
+
+}

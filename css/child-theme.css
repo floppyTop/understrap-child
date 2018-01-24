@@ -9683,6 +9683,31 @@ nav.navbar {
   nav.navbar #navbarNavDropdown {
     flex-grow: 0; }
 
+div#wrapper-footer {
+  background: #407e70; }
+  div#wrapper-footer h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase; }
+    @media (min-width: 992px) {
+      div#wrapper-footer h3 {
+        text-align: left; } }
+  div#wrapper-footer .menu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 .5em;
+    list-style-type: none;
+    text-align: center; }
+    @media (min-width: 992px) {
+      div#wrapper-footer .menu ul {
+        flex-direction: row; } }
+    @media (min-width: 992px) {
+      div#wrapper-footer .menu ul li {
+        margin-right: 1em; } }
+  div#wrapper-footer .menu a {
+    color: #fff;
+    text-transform: capitalize; }
+
 #right-sidebar {
   padding: 1.25em;
   background: #e6e6e6; }
@@ -9879,7 +9904,7 @@ section.intro p.intro-text {
       flex: 0 40%;
       color: #212121;
       background: #fff; }
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       .featured-categories .slick-slide a {
         padding: .5em 1.2em; } }
 
