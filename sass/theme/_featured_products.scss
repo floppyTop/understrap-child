@@ -1,5 +1,9 @@
 $slick-font-path: "../fonts/";
 
+ul.slick-dots li button[type="button"] {
+    color: $grey-med;
+}
+
 .slick-arrow {
     position: absolute;
     &.next {
@@ -33,7 +37,7 @@ $slick-font-path: "../fonts/";
     }
     a {
         color: #fff;
-        background: rgba(238,98,11,0.8);
+        background: $orange;
         padding: .5em;
         width: 100%;
         display: inline-block;

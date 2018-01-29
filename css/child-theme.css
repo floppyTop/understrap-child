@@ -9870,6 +9870,9 @@ section.intro p.intro-text {
     padding: 0 3em;
     font-size: 1.5em; } }
 
+ul.slick-dots li button[type="button"] {
+  color: #6B5E63; }
+
 .slick-arrow {
   position: absolute; }
   .slick-arrow.next {
@@ -9896,7 +9899,7 @@ section.intro p.intro-text {
       flex: 0 1 80%; }
   .featured-categories .slick-slide a {
     color: #fff;
-    background: rgba(238, 98, 11, 0.8);
+    background: #ee620b;
     padding: .5em;
     width: 100%;
     display: inline-block; }
