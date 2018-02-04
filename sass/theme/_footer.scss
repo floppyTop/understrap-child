@@ -10,12 +10,10 @@ div#wrapper-footer {
     }
   }
 
-  .menu {
-    ul {
+  ul#menu-footer-menu {
       display: flex;
       flex-direction: column;
       padding: 0 .5em;
-      list-style-type: none;
       text-align: center;
 
       @include media-breakpoint-up(lg) {
@@ -23,13 +21,15 @@ div#wrapper-footer {
       }
 
       li {
+        list-style-type: none;
+        text-align: center;        
         @include media-breakpoint-up(lg) {
           margin-right: 1em;
         }
       }
-    }
     a {
       color: #fff;
+      text-decoration: none;
       text-transform: capitalize;
     }
   }

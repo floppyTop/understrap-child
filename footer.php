@@ -26,6 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="site-info">
 
 						<h3>Quick Links</h3>
+						
 						<?php wp_nav_menu(	array(	'theme_location' => 'secondary'	)	); ?>
 					</div><!-- .site-info -->
 

@@ -9692,21 +9692,24 @@ div#wrapper-footer {
     @media (min-width: 992px) {
       div#wrapper-footer h3 {
         text-align: left; } }
-  div#wrapper-footer .menu ul {
+  div#wrapper-footer ul#menu-footer-menu {
     display: flex;
     flex-direction: column;
     padding: 0 .5em;
-    list-style-type: none;
     text-align: center; }
     @media (min-width: 992px) {
-      div#wrapper-footer .menu ul {
+      div#wrapper-footer ul#menu-footer-menu {
         flex-direction: row; } }
-    @media (min-width: 992px) {
-      div#wrapper-footer .menu ul li {
-        margin-right: 1em; } }
-  div#wrapper-footer .menu a {
-    color: #fff;
-    text-transform: capitalize; }
+    div#wrapper-footer ul#menu-footer-menu li {
+      list-style-type: none;
+      text-align: center; }
+      @media (min-width: 992px) {
+        div#wrapper-footer ul#menu-footer-menu li {
+          margin-right: 1em; } }
+    div#wrapper-footer ul#menu-footer-menu a {
+      color: #fff;
+      text-decoration: none;
+      text-transform: capitalize; }
 
 #right-sidebar {
   padding: 1.25em;

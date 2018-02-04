@@ -30,7 +30,6 @@
     $term_id = 16;
     $taxonomy_name = 'product_cat';
     $term_children = get_term_children( $term_id, $taxonomy_name );
-
     $args = array(
         'numberposts' => 10,
         'offset'      => 0,
@@ -47,6 +46,8 @@
     );
     
     $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
+
+    
 ?>
 
 
@@ -75,7 +76,7 @@
     <div class="inner">
 
         <?php if (!empty ($term_children)) : ?>
-
+            <h2>Featured Enhancements</h2>
             <div class="slick-slider">
 
             <?php foreach   (   $term_children as $child    ) {
