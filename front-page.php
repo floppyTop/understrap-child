@@ -54,10 +54,10 @@
 
 <div class="hero">
     <div id="hero-one" style="background-image: linear-gradient(36.48deg, rgba(33, 33, 33, .0) 0%, rgba(216,216,216,0.2) 100%), url('<?php echo $heroBG1['url']?>')">
-            <a href=""><h2 class="hero-heading one"><?php the_field('headline_1') ?></h2></a>
+            <a href="<?php the_field('link_one'); ?>"><h2 class="hero-heading one"><?php the_field('headline_1') ?></h2></a>
     </div>
     <div id="hero-two" style="background-image: linear-gradient(36.48deg, rgba(33, 33, 33, .0) 0%, rgba(216,216,216,0.2) 100%), url(' <?php echo $heroBG2['url'] ?>')">
-            <a href=""><h2 class="hero-heading two"><?php the_field('headline_2') ?></h2></a>
+            <a href="<?php the_field('link_two'); ?>"><h2 class="hero-heading two"><?php the_field('headline_2') ?></h2></a>
     </div>
     <?php
     if( !empty($introIcon) ): ?>

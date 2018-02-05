@@ -1,0 +1,51 @@
+//archive-product.php styles
+.archive.woocommerce {
+    ul.products {
+        list-style-type: none;
+        a {
+            color: $grey;
+        }
+        li.product {
+            @media #{$sm-md} {
+                margin: 0 1em 1em;
+                width: calc(48% - 2em);
+            }
+            a.btn {
+                @extend .btn;
+                @extend .btn-primary;
+            }
+            h2.woocommerce-loop-product__title {
+                @extend .h2;
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.single-product.woocommerce {
+    a.button {
+        @extend .btn;
+        @extend .btn-primary;
+    }
+
+    #respond input#submit {
+        @extend .btn;
+        @extend .btn-primary;
+    }
+
+    div.product .woocommerce-tabs ul.tabs li {
+        border-radius: 0;
+        border-bottom-width: 3px;
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+
+    .product_meta span {
+        display: block;
+    }
+}
