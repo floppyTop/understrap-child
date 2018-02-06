@@ -10034,6 +10034,25 @@ form {
   form textarea:focus {
     box-shadow: inset 0px -2px 0px 0px #ee620b !important; }
 
+.comment-subscription-form input[type=checkbox]#subscribe_blog {
+  width: 20px !important;
+  height: 20px;
+  border-radius: 0;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  top: 4px;
+  margin-right: .5em;
+  transition: .2s ease-out;
+  -webkit-appearance: none !important; }
+  .comment-subscription-form input[type=checkbox]#subscribe_blog:focus {
+    border: 1px solid #3B3B3B; }
+  .comment-subscription-form input[type=checkbox]#subscribe_blog:checked {
+    background: #3B3B3B; }
+
+.custom-select {
+  -webkit-appearance: none;
+  border-radius: 0; }
+
 .hero {
   display: flex;
   flex-direction: row;
@@ -10223,7 +10242,12 @@ ul.slick-dots li button[type="button"] {
       width: calc(48% - 2em); } }
   .archive.woocommerce ul.products li.product h2.woocommerce-loop-product__title {
     font-size: 1.5em;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 0; }
+  .archive.woocommerce ul.products li.product .price {
+    font-size: 1em;
+    margin-bottom: 1em;
+    color: #c22e2e; }
 
 .single-product.woocommerce div.product .woocommerce-tabs ul.tabs li {
   border-radius: 0;

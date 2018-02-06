@@ -1,4 +1,4 @@
-//archive-product.php styles
+//archive-product.php
 .archive.woocommerce {
     ul.products {
         list-style-type: none;
@@ -18,11 +18,18 @@
                 @extend .h2;
                 font-size: 1.5em;
                 font-weight: 700;
+                padding: 0;
+            }
+            .price {
+                font-size: 1em;
+                margin-bottom: 1em;
+                color: $accent;
             }
         }
     }
 }
 
+//single-product.php
 .single-product.woocommerce {
     a.button {
         @extend .btn;
