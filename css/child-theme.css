@@ -10236,6 +10236,9 @@ ul.slick-dots li button[type="button"] {
 .single-product.woocommerce .product_meta span {
   display: block; }
 
+.woocommerce p.stars a:hover {
+  color: #ee620b; }
+
 /* Slider */
 .slick-slider {
   position: relative;

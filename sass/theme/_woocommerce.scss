@@ -28,12 +28,10 @@
         @extend .btn;
         @extend .btn-primary;
     }
-
     #respond input#submit {
         @extend .btn;
         @extend .btn-primary;
     }
-
     div.product .woocommerce-tabs ul.tabs li {
         border-radius: 0;
         border-bottom-width: 3px;
@@ -44,8 +42,11 @@
             display: none;
         }
     }
-
     .product_meta span {
         display: block;
     }
+}
+
+.woocommerce p.stars a:hover {
+    color: $orange;
 }
