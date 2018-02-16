@@ -7,6 +7,7 @@
     $heroBG1 = get_field('hero_image_one');
     $heroBG2 = get_field('hero_image_two');
     $heroHeadline2  = get_field('hero_headline_2');
+
     // Intro Vars
     $introIcon      = get_field('intro_icon');
     $iconSize       = 'full';
@@ -54,10 +55,10 @@
 
 <div class="hero">
     <div id="hero-one" style="background-image: linear-gradient(36.48deg, rgba(33, 33, 33, .0) 0%, rgba(216,216,216,0.2) 100%), url('<?php echo $heroBG1['url']?>')">
-            <a href=""><h2 class="hero-heading one"><?php the_field('headline_1') ?></h2></a>
+            <a href="<?php the_field('link_one'); ?>"><h2 class="hero-heading one"><?php the_field('headline_1'); ?></h2></a>
     </div>
     <div id="hero-two" style="background-image: linear-gradient(36.48deg, rgba(33, 33, 33, .0) 0%, rgba(216,216,216,0.2) 100%), url(' <?php echo $heroBG2['url'] ?>')">
-            <a href=""><h2 class="hero-heading two"><?php the_field('headline_2') ?></h2></a>
+            <a href="<?php the_field('link_two'); ?>"><h2 class="hero-heading two"><?php the_field('headline_2') ?></h2></a>
     </div>
     <?php
     if( !empty($introIcon) ): ?>
@@ -82,8 +83,10 @@
             <?php foreach   (   $term_children as $child    ) {
                 $term = get_term_by( 'id', $child, $taxonomy_name );
                 $thumb_id = get_woocommerce_term_meta( $term->term_id, 'thumbnail_id', true );
+                $thumb = wp_get_attachment_image_src($thumb_id, 'slide');
+                $thumb_src = $thumb[0] ? esc_url($thumb[0]) : 'Something went wrong';
                 echo '<div class="slick-slide">';
-                echo '<img src="' . wp_get_attachment_url(  $thumb_id, 'medium'   ) . '"/>';
+                echo '<img src="' . $thumb_src . '"/>';
                 echo '<div class="bar">'; 
                 echo '<h3 class="featured-product-title"><a href="' . get_term_link( $child, $taxonomy_name ) . '">' . $term->name . '</a></h3>';
                 echo '<h3><a class="view" href="' . get_term_link( $child, $taxonomy_name ) . '">' . 'View' . '</a></h3>';

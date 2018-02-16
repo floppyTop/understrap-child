@@ -56,3 +56,7 @@ add_action('pre_get_posts','shop_filter_cat');
        );   
     }
  }
+
+ add_theme_support('post-thumbnails');
+ 
+ add_image_size( 'slide', 500, 350, true);

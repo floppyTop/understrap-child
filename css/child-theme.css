@@ -9684,7 +9684,11 @@ nav.navbar {
     flex-grow: 0; }
 
 div#wrapper-footer {
-  background: #407e70; }
+  background: #407e70;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0; }
   div#wrapper-footer h3 {
     color: #fff;
     text-align: center;
