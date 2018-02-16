@@ -6,6 +6,10 @@
             color: $grey;
         }
         li.product {
+            @media #{$xs-max} {
+                width: 100%;
+            }
+
             @media #{$sm-md} {
                 margin: 0 1em 1em;
                 width: calc(48% - 2em);
@@ -23,7 +27,6 @@
             .price {
                 font-size: 1em;
                 margin-bottom: 1em;
-                color: $accent;
             }
         }
     }
@@ -56,4 +59,15 @@
 
 .woocommerce p.stars a:hover {
     color: $orange;
+}
+.woocommerce{
+span.onsale {
+    padding: 0;
+    background-color: $orange;
+}
+.amount {
+    color: $accent;
+    font-family: $core-font;
+    margin-right: 0 .5em;  
+}
 }

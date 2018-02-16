@@ -9945,10 +9945,10 @@ nav.navbar {
 
 div#wrapper-footer {
   background: #407e70;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0; }
+  padding: 10px;
+  position: relative;
+  margin-top: -60px;
+  top: 60px; }
   div#wrapper-footer h3 {
     color: #fff;
     text-align: center;
@@ -9963,7 +9963,8 @@ div#wrapper-footer {
     text-align: center; }
     @media (min-width: 992px) {
       div#wrapper-footer ul#menu-footer-menu {
-        flex-direction: row; } }
+        flex-direction: row;
+        margin-bottom: 0; } }
     div#wrapper-footer ul#menu-footer-menu li {
       list-style-type: none;
       text-align: center; }
@@ -9974,6 +9975,8 @@ div#wrapper-footer {
       color: #fff;
       text-decoration: none;
       text-transform: capitalize; }
+      div#wrapper-footer ul#menu-footer-menu a:hover {
+        text-decoration: underline; }
 
 #right-sidebar {
   padding: 1.25em;
@@ -10240,6 +10243,9 @@ ul.slick-dots li button[type="button"] {
   list-style-type: none; }
   .archive.woocommerce ul.products a {
     color: #3B3B3B; }
+  @media only screen and (max-width: 520px) {
+    .archive.woocommerce ul.products li.product {
+      width: 100%; } }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .archive.woocommerce ul.products li.product {
       margin: 0 1em 1em;
@@ -10250,8 +10256,7 @@ ul.slick-dots li button[type="button"] {
     padding: 0; }
   .archive.woocommerce ul.products li.product .price {
     font-size: 1em;
-    margin-bottom: 1em;
-    color: #c22e2e; }
+    margin-bottom: 1em; }
 
 .single-product.woocommerce div.product .woocommerce-tabs ul.tabs li {
   border-radius: 0;
@@ -10266,6 +10271,15 @@ ul.slick-dots li button[type="button"] {
 
 .woocommerce p.stars a:hover {
   color: #ee620b; }
+
+.woocommerce span.onsale {
+  padding: 0;
+  background-color: #ee620b; }
+
+.woocommerce .amount {
+  color: #c22e2e;
+  font-family: "Montserrat";
+  margin-right: 0 .5em; }
 
 /* Slider */
 .slick-slider {
@@ -10471,3 +10485,6 @@ ul.slick-dots li button[type="button"] {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+
+#content {
+  min-height: 67vh; }

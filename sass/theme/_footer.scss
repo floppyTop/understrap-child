@@ -1,9 +1,11 @@
 div#wrapper-footer {
   background: $teal-dark;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  
+  padding: 10px;
+  position: relative;
+  margin-top: -60px;
+  top: 60px;
+
 
   h3 {
     color: #fff;
@@ -22,6 +24,7 @@ div#wrapper-footer {
 
       @include media-breakpoint-up(lg) {
         flex-direction: row;
+        margin-bottom: 0;
       }
 
       li {
@@ -35,6 +38,9 @@ div#wrapper-footer {
       color: #fff;
       text-decoration: none;
       text-transform: capitalize;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
