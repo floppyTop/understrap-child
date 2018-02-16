@@ -2370,26 +2370,39 @@ fieldset[disabled] a.button {
     .show > input.dropdown-toggle#submit:focus {
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
 
-.btn-secondary {
+.btn-secondary, .single-product.woocommerce .related .btn, .single-product.woocommerce .related .wpcf7 input[type=submit], .wpcf7 .single-product.woocommerce .related input[type=submit], .single-product.woocommerce .related .archive.woocommerce ul.products li.product a.btn, .archive.woocommerce ul.products li.product .single-product.woocommerce .related a.btn, .single-product.woocommerce .related a.button, .single-product.woocommerce .related #respond input#submit, .single-product.woocommerce #respond .related input#submit {
   color: #fff;
   background-color: #868e96;
   border-color: #868e96; }
-  .btn-secondary:hover {
+  .btn-secondary:hover, .single-product.woocommerce .related .btn:hover, .single-product.woocommerce .related .wpcf7 input[type=submit]:hover, .wpcf7 .single-product.woocommerce .related input[type=submit]:hover, .single-product.woocommerce .related .archive.woocommerce ul.products li.product a.btn:hover, .archive.woocommerce ul.products li.product .single-product.woocommerce .related a.btn:hover, .single-product.woocommerce .related a.button:hover, .single-product.woocommerce .related #respond input#submit:hover, .single-product.woocommerce #respond .related input#submit:hover {
     color: #fff;
     background-color: #727b84;
     border-color: #6c757d; }
-  .btn-secondary:focus, .btn-secondary.focus {
+  .btn-secondary:focus, .single-product.woocommerce .related .btn:focus, .single-product.woocommerce .related .wpcf7 input[type=submit]:focus, .wpcf7 .single-product.woocommerce .related input[type=submit]:focus, .single-product.woocommerce .related .archive.woocommerce ul.products li.product a.btn:focus, .archive.woocommerce ul.products li.product .single-product.woocommerce .related a.btn:focus, .single-product.woocommerce .related a.button:focus, .single-product.woocommerce .related #respond input#submit:focus, .single-product.woocommerce #respond .related input#submit:focus, .btn-secondary.focus, .single-product.woocommerce .related .focus.btn, .single-product.woocommerce .related .wpcf7 input.focus[type=submit], .wpcf7 .single-product.woocommerce .related input.focus[type=submit], .single-product.woocommerce .related .archive.woocommerce ul.products li.product a.focus.btn, .archive.woocommerce ul.products li.product .single-product.woocommerce .related a.focus.btn, .single-product.woocommerce .related a.focus.button, .single-product.woocommerce .related #respond input.focus#submit, .single-product.woocommerce #respond .related input.focus#submit {
     box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5); }
-  .btn-secondary.disabled, .btn-secondary:disabled {
+  .btn-secondary.disabled, .single-product.woocommerce .related .disabled.btn, .single-product.woocommerce .related .wpcf7 input.disabled[type=submit], .wpcf7 .single-product.woocommerce .related input.disabled[type=submit], .single-product.woocommerce .related .archive.woocommerce ul.products li.product a.disabled.btn, .archive.woocommerce ul.products li.product .single-product.woocommerce .related a.disabled.btn, .single-product.woocommerce .related a.disabled.button, .single-product.woocommerce .related #respond input.disabled#submit, .single-product.woocommerce #respond .related input.disabled#submit, .btn-secondary:disabled, .single-product.woocommerce .related .btn:disabled, .single-product.woocommerce .related .wpcf7 input[type=submit]:disabled, .wpcf7 .single-product.woocommerce .related input[type=submit]:disabled, .single-product.woocommerce .related .archive.woocommerce ul.products li.product a.btn:disabled, .archive.woocommerce ul.products li.product .single-product.woocommerce .related a.btn:disabled, .single-product.woocommerce .related a.button:disabled, .single-product.woocommerce .related #respond input#submit:disabled, .single-product.woocommerce #respond .related input#submit:disabled {
     background-color: #868e96;
     border-color: #868e96; }
-  .btn-secondary:not([disabled]):not(.disabled):active, .btn-secondary:not([disabled]):not(.disabled).active,
-  .show > .btn-secondary.dropdown-toggle {
+  .btn-secondary:not([disabled]):not(.disabled):active, .single-product.woocommerce .related .btn:not([disabled]):not(.disabled):active, .single-product.woocommerce .related .wpcf7 input[type=submit]:not([disabled]):not(.disabled):active, .wpcf7 .single-product.woocommerce .related input[type=submit]:not([disabled]):not(.disabled):active, .single-product.woocommerce .related a.button:not([disabled]):not(.disabled):active, .single-product.woocommerce .related #respond input#submit:not([disabled]):not(.disabled):active, .single-product.woocommerce #respond .related input#submit:not([disabled]):not(.disabled):active, .btn-secondary:not([disabled]):not(.disabled).active, .single-product.woocommerce .related .btn:not([disabled]):not(.disabled).active, .single-product.woocommerce .related .wpcf7 input[type=submit]:not([disabled]):not(.disabled).active, .wpcf7 .single-product.woocommerce .related input[type=submit]:not([disabled]):not(.disabled).active, .single-product.woocommerce .related a.button:not([disabled]):not(.disabled).active, .single-product.woocommerce .related #respond input#submit:not([disabled]):not(.disabled).active, .single-product.woocommerce #respond .related input#submit:not([disabled]):not(.disabled).active,
+  .show > .btn-secondary.dropdown-toggle, .single-product.woocommerce .related
+  .show > .dropdown-toggle.btn, .single-product.woocommerce .related .wpcf7
+  .show > input.dropdown-toggle[type=submit], .wpcf7 .single-product.woocommerce .related
+  .show > input.dropdown-toggle[type=submit], .single-product.woocommerce .related .archive.woocommerce ul.products li.product
+  .show > a.dropdown-toggle.btn, .single-product.woocommerce .related
+  .show > a.dropdown-toggle.button, .single-product.woocommerce .related #respond
+  .show > input.dropdown-toggle#submit, .single-product.woocommerce #respond .related
+  .show > input.dropdown-toggle#submit {
     color: #fff;
     background-color: #6c757d;
     border-color: #666e76; }
-    .btn-secondary:not([disabled]):not(.disabled):active:focus, .btn-secondary:not([disabled]):not(.disabled).active:focus,
-    .show > .btn-secondary.dropdown-toggle:focus {
+    .btn-secondary:not([disabled]):not(.disabled):active:focus, .single-product.woocommerce .related .btn:not([disabled]):not(.disabled):active:focus, .single-product.woocommerce .related .wpcf7 input[type=submit]:not([disabled]):not(.disabled):active:focus, .wpcf7 .single-product.woocommerce .related input[type=submit]:not([disabled]):not(.disabled):active:focus, .single-product.woocommerce .related a.button:not([disabled]):not(.disabled):active:focus, .single-product.woocommerce .related #respond input#submit:not([disabled]):not(.disabled):active:focus, .single-product.woocommerce #respond .related input#submit:not([disabled]):not(.disabled):active:focus, .btn-secondary:not([disabled]):not(.disabled).active:focus, .single-product.woocommerce .related .btn:not([disabled]):not(.disabled).active:focus, .single-product.woocommerce .related .wpcf7 input[type=submit]:not([disabled]):not(.disabled).active:focus, .wpcf7 .single-product.woocommerce .related input[type=submit]:not([disabled]):not(.disabled).active:focus, .single-product.woocommerce .related a.button:not([disabled]):not(.disabled).active:focus, .single-product.woocommerce .related #respond input#submit:not([disabled]):not(.disabled).active:focus, .single-product.woocommerce #respond .related input#submit:not([disabled]):not(.disabled).active:focus,
+    .show > .btn-secondary.dropdown-toggle:focus, .single-product.woocommerce .related
+    .show > .dropdown-toggle.btn:focus, .single-product.woocommerce .related .wpcf7
+    .show > input.dropdown-toggle[type=submit]:focus, .wpcf7 .single-product.woocommerce .related
+    .show > input.dropdown-toggle[type=submit]:focus, .single-product.woocommerce .related
+    .show > a.dropdown-toggle.button:focus, .single-product.woocommerce .related #respond
+    .show > input.dropdown-toggle#submit:focus, .single-product.woocommerce #respond .related
+    .show > input.dropdown-toggle#submit:focus {
       box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5); }
 
 .btn-success {
@@ -9920,6 +9933,12 @@ section.content {
   .btn-primary:hover, .archive.woocommerce ul.products li.product a.btn:hover, .archive.woocommerce ul.products li.product .single-product.woocommerce a.button:hover, .single-product.woocommerce .archive.woocommerce ul.products li.product a.button:hover, .single-product.woocommerce a.button:hover, .single-product.woocommerce #respond input#submit:hover {
     background-color: #ee620b; }
 
+.btn-secondary, .single-product.woocommerce .related .btn, .single-product.woocommerce .related .wpcf7 input[type=submit], .wpcf7 .single-product.woocommerce .related input[type=submit], .single-product.woocommerce .related .archive.woocommerce ul.products li.product a.btn, .archive.woocommerce ul.products li.product .single-product.woocommerce .related a.btn, .single-product.woocommerce .related a.button, .single-product.woocommerce .related #respond input#submit, .single-product.woocommerce #respond .related input#submit {
+  background-color: #ee620b;
+  border: 1px solid #6B5E63; }
+  .btn-secondary:hover, .single-product.woocommerce .related .btn:hover, .single-product.woocommerce .related .wpcf7 input[type=submit]:hover, .wpcf7 .single-product.woocommerce .related input[type=submit]:hover, .single-product.woocommerce .related .archive.woocommerce ul.products li.product a.btn:hover, .archive.woocommerce ul.products li.product .single-product.woocommerce .related a.btn:hover, .single-product.woocommerce .related a.button:hover, .single-product.woocommerce .related #respond input#submit:hover, .single-product.woocommerce #respond .related input#submit:hover {
+    background: #c22e2e; }
+
 nav.navbar {
   background: #95C9BD !important; }
   nav.navbar ul.navbar-nav li.active {
@@ -9946,9 +9965,7 @@ nav.navbar {
 div#wrapper-footer {
   background: #407e70;
   padding: 10px;
-  position: relative;
-  margin-top: -60px;
-  top: 60px; }
+  position: relative; }
   div#wrapper-footer h3 {
     color: #fff;
     text-align: center;
@@ -10041,19 +10058,41 @@ form {
   form textarea:focus {
     box-shadow: inset 0px -2px 0px 0px #ee620b !important; }
 
-.comment-subscription-form input[type=checkbox]#subscribe_blog {
+.form-control, .wpcf7 input[type=text],
+.wpcf7 input[type=search],
+.wpcf7 input[type=url],
+.wpcf7 input[type=tel],
+.wpcf7 input[type=number],
+.wpcf7 input[type=range],
+.wpcf7 input[type=date],
+.wpcf7 input[type=month],
+.wpcf7 input[type=week],
+.wpcf7 input[type=time],
+.wpcf7 input[type=datetime],
+.wpcf7 input[type=datetime-local],
+.wpcf7 input[type=color],
+.wpcf7 input[type=email],
+.wpcf7 input[type=file],
+.wpcf7 input[type=submit],
+.wpcf7 select,
+.wpcf7 textarea, .wpcf7 .wpcf7-validation-errors {
+  border-radius: 0;
+  border-bottom: 1px solid #b6acb0; }
+
+.comment-subscription-form input[type=checkbox] {
   width: 20px !important;
   height: 20px;
   border-radius: 0;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #6B5E63;
+  cursor: pointer;
   position: relative;
   top: 4px;
   margin-right: .5em;
-  transition: .2s ease-out;
+  transition: .12s ease-out;
   -webkit-appearance: none !important; }
-  .comment-subscription-form input[type=checkbox]#subscribe_blog:focus {
+  .comment-subscription-form input[type=checkbox]:focus {
     border: 1px solid #3B3B3B; }
-  .comment-subscription-form input[type=checkbox]#subscribe_blog:checked {
+  .comment-subscription-form input[type=checkbox]:checked {
     background: #3B3B3B; }
 
 .custom-select {
@@ -10269,7 +10308,7 @@ ul.slick-dots li button[type="button"] {
 .single-product.woocommerce .product_meta span {
   display: block; }
 
-.woocommerce p.stars a:hover {
+.single-product.woocommerce .related .woocommerce-loop-product__title:hover {
   color: #ee620b; }
 
 .woocommerce span.onsale {
@@ -10280,6 +10319,9 @@ ul.slick-dots li button[type="button"] {
   color: #c22e2e;
   font-family: "Montserrat";
   margin-right: 0 .5em; }
+
+.woocommerce p.stars a:hover {
+  color: #ee620b; }
 
 /* Slider */
 .slick-slider {
@@ -10487,4 +10529,4 @@ ul.slick-dots li button[type="button"] {
       opacity: 0.75; }
 
 #content {
-  min-height: 67vh; }
+  min-height: 70vh; }

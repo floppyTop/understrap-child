@@ -29,17 +29,23 @@ form {
         box-shadow: inset 0px -2px 0px 0px $orange !important;
     }
 }
+.form-control {
+    border-radius: 0;
+    border-bottom: 1px solid lighten($grey-med, 30%);
+}
+
 
 .comment-subscription-form {
-    input[type=checkbox]#subscribe_blog {
+    input[type=checkbox] {
         width: 20px !important;
         height: 20px;
         border-radius: 0;
-        border: 1px solid #e6e6e6;
+        border: 1px solid $grey-med;
+        cursor: pointer;
         position: relative;
         top: 4px;
         margin-right: .5em;
-        transition: .2s ease-out;
+        transition: .12s ease-out;
         -webkit-appearance: none !important;
 
         &:focus {

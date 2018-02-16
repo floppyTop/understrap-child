@@ -14,3 +14,11 @@
         background-color: $orange;
     }
 }
+
+.btn-secondary {
+    background-color: $orange;
+    border: 1px solid $grey-med;
+    &:hover {
+        background: $accent;
+    }
+}
