@@ -28,7 +28,7 @@ h1 {
     font-size: em(35);
 }
 
-h2 {
+h2, .h2 {
     font-size: em(32);
 }
 
@@ -80,7 +80,7 @@ h2, h5, h6 {
 }
 
 // Lists
-#content ul {
+#content #right-sidebar ul {
     list-style: none;
     
     li {

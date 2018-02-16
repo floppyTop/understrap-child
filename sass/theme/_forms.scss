@@ -29,3 +29,30 @@ form {
         box-shadow: inset 0px -2px 0px 0px $orange !important;
     }
 }
+
+.comment-subscription-form {
+    input[type=checkbox]#subscribe_blog {
+        width: 20px !important;
+        height: 20px;
+        border-radius: 0;
+        border: 1px solid #e6e6e6;
+        position: relative;
+        top: 4px;
+        margin-right: .5em;
+        transition: .2s ease-out;
+        -webkit-appearance: none !important;
+
+        &:focus {
+            border: 1px solid $grey;
+        }
+        &:checked {
+            background: $grey;
+        }
+    }
+}
+
+.custom-select {
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
