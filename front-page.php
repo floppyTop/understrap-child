@@ -57,19 +57,20 @@
     <div id="hero-one" style="background-image: linear-gradient(36.48deg, rgba(33, 33, 33, .0) 0%, rgba(216,216,216,0.2) 100%), url('<?php echo $heroBG1['url']?>')">
             <a href="<?php the_field('link_one'); ?>"><h2 class="hero-heading one"><?php the_field('headline_1'); ?></h2></a>
     </div>
-    <div id="hero-two" style="background-image: linear-gradient(36.48deg, rgba(33, 33, 33, .0) 0%, rgba(216,216,216,0.2) 100%), url(' <?php echo $heroBG2['url'] ?>')">
-            <a href="<?php the_field('link_two'); ?>"><h2 class="hero-heading two"><?php the_field('headline_2'); ?></h2></a>
-    </div>
     <?php
     if( !empty($introIcon) ): ?>
             <img class="icon" src="<?php echo $introIcon['url']; ?>" alt="<?php echo $introIcon['alt']; ?>">
     <?php endif; ?>
+    <div id="hero-two" style="background-image: linear-gradient(36.48deg, rgba(33, 33, 33, .0) 0%, rgba(216,216,216,0.2) 100%), url(' <?php echo $heroBG2['url'] ?>')">
+            <a href="<?php the_field('link_two'); ?>"><h2 class="hero-heading two"><?php the_field('headline_2'); ?></h2></a>
+    </div>
 </div>
 
 <section class="intro content">
     <div class="inner">
-    <h1 class="intro"><?php the_field('intro_heading') ?></h1>
-    <p class="intro-text"><?php echo $introText; ?></p>
+    <h1 class="intro"><?php the_field('intro_heading'); ?></h1>
+    <h6><?php the_field('intro_subheading'); ?></h6>
+    <p class="intro-text"><?php the_field('intro_text'); ?></p>
     </div>
 </section>
 

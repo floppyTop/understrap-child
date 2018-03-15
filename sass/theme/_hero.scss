@@ -7,8 +7,9 @@
         align-self: flex-start;
         width: 70px;
         height: auto;
-        position: relative;
-        bottom: 18%;
+        position: absolute;
+        left: calc(50% - 35px);
+        top: 410px;
         transition: .15s ease-out;
         transform-origin: center 60%;
         &.right {
@@ -38,7 +39,7 @@
     justify-content: center;
     flex-basis: 100%;
     flex-grow: 0;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 350px;    
     div {
         flex: 0 1 50%;
@@ -83,10 +84,9 @@
 }
 
     @media #{$xl-min} {
-        .hero .icon {
-            bottom: 15%;
-        } 
-
+       .hero img.icon {
+            top: 465px;
+        }
     }
 
     @media #{$xs-sm} {

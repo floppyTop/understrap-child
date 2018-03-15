@@ -9852,7 +9852,7 @@ h2, .h2, .archive.woocommerce ul.products li.product h2.woocommerce-loop-product
   font-size: 2em; }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.2em; }
 
 h1, h2, h3, h4, h5, h6, label {
   letter-spacing: -.61px; }
@@ -9938,6 +9938,9 @@ section.content {
   border: 1px solid #6B5E63; }
   .btn-secondary:hover, .single-product.woocommerce .related .btn:hover, .single-product.woocommerce .related .wpcf7 input[type=submit]:hover, .wpcf7 .single-product.woocommerce .related input[type=submit]:hover, .single-product.woocommerce .related .archive.woocommerce ul.products li.product a.btn:hover, .archive.woocommerce ul.products li.product .single-product.woocommerce .related a.btn:hover, .single-product.woocommerce .related a.button:hover, .single-product.woocommerce .related #respond input#submit:hover, .single-product.woocommerce #respond .related input#submit:hover {
     background: #c22e2e; }
+
+.custom-logo-link img {
+  width: 200px; }
 
 nav.navbar {
   background: #95C9BD !important; }
@@ -10105,7 +10108,7 @@ form {
   justify-content: center;
   flex-basis: 100%;
   flex-grow: 0;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   height: 350px; }
   .hero .icon-container {
     flex: 0 1 100%; }
@@ -10114,8 +10117,9 @@ form {
     align-self: flex-start;
     width: 70px;
     height: auto;
-    position: relative;
-    bottom: 18%;
+    position: absolute;
+    left: calc(50% - 35px);
+    top: 410px;
     transition: .15s ease-out;
     transform-origin: center 60%; }
     .hero .icon.right {
@@ -10167,8 +10171,8 @@ form {
       border-left: 1px solid #fff; }
 
 @media only screen and (min-width: 1400px) {
-  .hero .icon {
-    bottom: 15%; } }
+  .hero img.icon {
+    top: 465px; } }
 
 @media only screen and (min-width: none) and (max-width: 767px) {
   .hero, .hero div {
@@ -10189,6 +10193,15 @@ section.intro h1.intro {
   @media only screen and (min-width: 768px) {
     section.intro h1.intro {
       font-size: 2.375em; } }
+
+section.intro h6 {
+  letter-spacing: 3px; }
+  section.intro h6::after {
+    content: '';
+    display: block;
+    width: 55px;
+    border: 1px solid #fff;
+    margin: .9em auto 1em; }
 
 section.intro p.intro-text {
   font-size: 1.0625em; }
@@ -10224,7 +10237,14 @@ ul.slick-dots li button[type="button"] {
   .featured-categories .slick-slide h3 {
     margin: 0; }
     .featured-categories .slick-slide h3.featured-product-title {
-      flex: 0 1 80%; }
+      flex: 0 1 80%;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+      @media only screen and (min-width: 992px) {
+        .featured-categories .slick-slide h3.featured-product-title {
+          font-size: 1.5em; } }
+  .featured-categories .slick-slide:nth-child(2) {
+    flex-grow: 1; }
   .featured-categories .slick-slide a {
     color: #fff;
     background: #ee620b;
@@ -10264,7 +10284,8 @@ ul.slick-dots li button[type="button"] {
     border-bottom: 1px solid #fff; }
 
 .recent-posts h3 {
-  text-align: left; }
+  text-align: left;
+  font-size: 1.5em; }
 
 .recent-posts p {
   color: #fff;

@@ -7,6 +7,16 @@ section.intro {
             font-size: em(38);
         }
     }
+    h6 {
+        letter-spacing: 3px;
+        &::after {
+            content: '';
+            display: block;
+            width: 55px;
+            border: 1px solid #fff;
+            margin: .9em auto 1em;
+        }
+    }
     p.intro-text {
         font-size: em(17);
     }

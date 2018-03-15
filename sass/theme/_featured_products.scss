@@ -32,9 +32,18 @@ ul.slick-dots li button[type="button"] {
     h3 {
         margin: 0;
         &.featured-product-title {
-            flex: 0 1 80%;  
+            flex: 0 1 80%;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            @media #{$md-min} {
+                font-size: 1.5em;
+            }
         }
+    }&:nth-child(2) {
+        flex-grow: 1;
     }
+
+
     a {
         color: #fff;
         background: $orange;
